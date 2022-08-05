@@ -14,3 +14,10 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+Resources: 
+
+https://designermarket.gumroad.com/l/ios7?recommended_by=library
+RobDesigns Icons
+
+fontawesome
+https://fontawesome.com/

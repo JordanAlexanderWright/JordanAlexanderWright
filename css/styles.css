@@ -1,13 +1,26 @@
+/*
+Pallet Codes
+#CAD2C5
+#84A98C
+#52796F
+#354f52
+#2F3E46
+*/
+
 *{
     box-sizing: border-box;
     margin: 0;
 }
-#headshot {
 
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+#headshot {
     border-radius: 100px;
     max-width: 200px;
     max-height: 200px;
-
 }
 
 .testing {
@@ -30,16 +43,38 @@
 }
 
 .infocard {
-    background-color: black;
+    background-color: #354f52;
     padding: 10px;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-items: center;
     align-items: center;
 }
 
 .cardholder{
-    background-color: grey;
+    min-width: 300px;
+    background-color: #CAD2C5;
+    max-width: 750px;
     margin: 10%;
     padding: 40px;
+}
+
+.fa-circle{
+    z-index:1;
+    color:white;
+}
+
+.emailIcon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 3px;
+}
+
+.fa-envelope{
+    color: #354f52;
+    z-index: 2;
+    margin-left: -40px;
+    margin-top: 8px;
 }
