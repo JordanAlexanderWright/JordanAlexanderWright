@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+#headshot {
+
+    border-radius: 100px;
+    max-width: 200px;
+    max-height: 200px;
+
+}
+
+.testing {
+    color: red;
+}
+
+#medialinks img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#medialinks {
+    display: flex;
+    column-gap: 25px;
+    padding: 0;
+}
+
+#medialinks li {
+    list-style: none;
+}
+
+.infocard {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.cardholder{
+    background-color: grey;
+    margin: 10%;
+    padding: 40px;
+}
