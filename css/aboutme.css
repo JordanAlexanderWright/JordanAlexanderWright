@@ -1,0 +1,42 @@
+#aboutMe{
+    background-color: #52796F;
+    display:inline-flex;
+}
+
+.aboutMeWrapper {
+    display: grid;
+    width: fit-content;
+    grid-template-areas: 'header header header'
+                         'education education picture '
+                         'experience experience picture'
+                         'technologies technologies technologies';
+    margin: 15px 20% 15px;;
+    background-color:#CAD2C5;
+}
+
+.placeholderIMG{
+    max-width: 200px;
+    max-height: 400px;
+    padding-right: 50px;
+    grid-area: picture;
+}
+
+ #aboutMeHeading{
+    grid-area: header;
+    justify-self: center;
+    text-decoration: underline;
+}
+
+.education {
+    grid-area: education;
+}
+
+.experience{
+    grid-area: experience;
+
+}
+
+.technologies{
+    grid-area: technologies;
+} 
+
