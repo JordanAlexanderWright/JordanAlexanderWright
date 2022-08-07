@@ -24,6 +24,10 @@ body {
     background-color: #CAD2C5;
 }
 
+main{
+    margin-top: 20px;
+}
+
 .testing {
     color: red;
 }

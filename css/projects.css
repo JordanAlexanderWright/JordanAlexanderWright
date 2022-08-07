@@ -1,0 +1,75 @@
+.projectsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.projectsContainer img {
+    width: 300px;
+    height: 250px;
+}
+
+.projectsContainer img :hover {
+    max-width: 500px;
+    max-height: 250px;
+}
+
+.projectFigure figcaption { 
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: rgb(0,0,0,.3);
+    width: 100%;
+    height: 100%;    
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+
+.projectFigure figcaption:hover{
+    opacity: 1;
+}
+
+.projectFigure figcaption > * {
+    transform: translateY(20px);
+    transition: transform 1s;
+}
+
+.projectFigure figcaption:hover > *{
+    transform: translateY(0px);
+}
+.projectFigure figcaption, .projectFigure p, .projectFigure h3{
+    color:white;
+}
+
+figure {
+    max-width:fit-content;
+}
+
+.projectWrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap:10px;
+}
+
+.projectFigure {
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    
+}
+
+.projectTitle {
+    font-size: 2em;
+    font-weight:600;
+}
+
+.projectDescription{
+    font-size: 1.24em;
+    margin-top: .25em;
+}
