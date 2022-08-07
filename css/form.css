@@ -9,8 +9,8 @@
 }
 
 .formWrapper {
-  padding: 40px;
-  background-color: white;
+  padding: 30px 30px 10px ;
+  background-color: #2F3E46;
   margin-bottom: 15px;
 }
 
@@ -20,7 +20,9 @@
     "name name"
     "email email"
     "message message"
-    "button button";
+    "button button"
+    "response response";
+    row-gap:20px;
     
 }
 
@@ -28,6 +30,11 @@
   display: flex;
   column-gap: 20px;
   flex-direction:column;
+  row-gap:5px;
+}
+
+#contactForm label{
+    color: #CAD2C5;
 }
 
 .name {
@@ -45,27 +52,83 @@
 
 #formSubmit{
     font-size: 1.5em;
-    background-color: #52796F;
-    color: #CAD2C5;
+    background-color: #CAD2C5;
+    color: #354f52;
     border-radius: 15px;
     justify-self: center;
     align-self: center;
     margin-top: 15px;
-    padding: 5px;
+    padding: 8px 15px 8px;
     grid-area: button;    
 }
 
 .thankYou{
     width: 350px;
-    height:fit-content;
-    background-color: grey;
+    height: fit-content;
+    background-color:#52796F;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
     align-items: center;
     padding:20px;
+    margin-right: -20px;
+    margin-top:20px;
+    z-index: 1;
+}
+
+.thankYou p, #thanksHeading{
+    color: #CAD2C5;
 }
 
 #thanksHeading{
     text-decoration: underline;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.fa-envelope {
+    size: 5em;
+    color: #2F3E46;
+}
+
+#responseMessage{
+    display:none;
+    color: white;
+    grid-area: response;
+    justify-self: center;
+}
+
+.showMessage {
+    animation-name: showMessageAnimation;
+    animation-duration: 1s;
+    animation-play-state:running;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.hideMessage{
+    animation-name: hideMessageAnimation;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hideMessageAnimation{
+    from {
+        opacity: 1
+    } to {
+        opacity: 0;
+    }
+}
+
+@keyframes showMessageAnimation{
+    from{
+        opacity: 0
+    } to {
+        opacity: 1
+    }
 }

@@ -65,6 +65,7 @@
 
     <main>
       <section id="aboutMe" class="show">
+        
         <div class="aboutMeWrapper">
           <h2 id="aboutMeHeading">About Me</h2>
 
@@ -206,13 +207,14 @@
             </div>
 
             <div class="emailWrapper">
-              <label for="email">Email:</label>
-              <input type="email" name="email" />
+              <label for="email">Email Address:</label>
+              <input type="email" name="email" id="emailField" />
             </div>
 
             <div class="messageWrapper">
               <label for="message">Message:</label>
               <textarea
+                id="messageField"
                 name="message"
                 id="message"
                 cols="45"
@@ -220,7 +222,9 @@
               ></textarea>
             </div>
 
-            <button id="formSubmit">Submit</button>
+            <button id="formSubmit" type="submit">Submit</button>
+
+            <div id="responseMessage" style=>'Thank You! Your Response Was Submitted'</div>
           </form>
         </div>
       </section>
