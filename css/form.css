@@ -1,0 +1,71 @@
+#contactMe {
+  order: -1;
+  display: flex;
+  justify-content: center;
+}
+
+#message {
+  resize: none;
+}
+
+.formWrapper {
+  padding: 40px;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+#contactForm {
+  display: grid;
+  grid-template-areas:
+    "name name"
+    "email email"
+    "message message"
+    "button button";
+    
+}
+
+#contactForm > * {
+  display: flex;
+  column-gap: 20px;
+  flex-direction:column;
+}
+
+.name {
+  grid-area: name;
+}
+
+.emailWrapper {
+  grid-area: email;
+}
+
+.messageWrapper {
+  grid-area: message;
+  flex-direction:column;
+}
+
+#formSubmit{
+    font-size: 1.5em;
+    background-color: #52796F;
+    color: #CAD2C5;
+    border-radius: 15px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 15px;
+    padding: 5px;
+    grid-area: button;    
+}
+
+.thankYou{
+    width: 350px;
+    height:fit-content;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    padding:20px;
+}
+
+#thanksHeading{
+    text-decoration: underline;
+}

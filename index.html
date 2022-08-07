@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/aboutme.css" />
     <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/form.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -63,7 +64,7 @@
     <hr />
 
     <main>
-      <section id="aboutMe" class ='show'>
+      <section id="aboutMe" class="show">
         <div class="aboutMeWrapper">
           <h2 id="aboutMeHeading">About Me</h2>
 
@@ -114,11 +115,10 @@
             srcset=""
             class="placeholderIMG"
           />
-        
         </div>
       </section>
 
-      <section id="projects" class = 'hide'>
+      <section id="projects" class="hide">
         <h2 id="projectHeading">Projects</h2>
         <div class="projectsContainer">
           <div class="projectOne projectWrapper project">
@@ -129,18 +129,16 @@
                 <p class="projectDescription">This is project 1</p>
               </figcaption>
             </figure>
-            <p class="description">
-              Lorem ipsum dolor sit amet
-            </p>
+            <p class="description">Lorem ipsum dolor sit amet</p>
             <ul>
-                <li>Vivamus vestibulum ntulla nec ante.</li>
-  
-                <li>Praesent placerat risus quis eros.</li>
-  
-                <li>Fusce pellentesque suscipit nibh.</li>
-  
-                <li>Vestibulum commodo felis quis tortor.</li>
-              </ul>
+              <li>Vivamus vestibulum ntulla nec ante.</li>
+
+              <li>Praesent placerat risus quis eros.</li>
+
+              <li>Fusce pellentesque suscipit nibh.</li>
+
+              <li>Vestibulum commodo felis quis tortor.</li>
+            </ul>
           </div>
 
           <div class="projectTwo projectWrapper project">
@@ -170,19 +168,60 @@
               <figcaption>
                 <h3 class="projectTitle">Project 3</h3>
                 <p class="projectDescription">This is project 3</p>
-            </figcaption>
+              </figcaption>
             </figure>
             <p class="description">Vestibulum auctor dapibus neque.</p>
             <ul>
-                <li>Vivamus vestibulum ntulla nec ante.</li>
-  
-                <li>Praesent placerat risus quis eros.</li>
-  
-                <li>Fusce pellentesque suscipit nibh.</li>
-  
-                <li>Vestibulum commodo felis quis tortor.</li>
-              </ul>
+              <li>Vivamus vestibulum ntulla nec ante.</li>
+
+              <li>Praesent placerat risus quis eros.</li>
+
+              <li>Fusce pellentesque suscipit nibh.</li>
+
+              <li>Vestibulum commodo felis quis tortor.</li>
+            </ul>
           </div>
+        </div>
+      </section>
+
+      <section id="contactMe">
+        <div class="thankYou">
+            <h3 id="thanksHeading">Thank You</h3>
+          <p>
+            Sensors indicate no shuttle or other ships in this sector. According
+            to coordinates, we have travelled 7,000 light years and are located
+            near the system J-25. Tractor beam released, sir. Force field
+            maintaining our hull integrity. Damage report? Sections 27, 28 and
+            29 on decks four, five and six destroyed. Without our shields, at
+            this range it is probable a photon detonation could destroy the
+            Enterprise.
+          </p>
+        </div>
+
+        <div class="formWrapper">
+          <form action="" id="contactForm">
+            <div class="name">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="nameField" />
+            </div>
+
+            <div class="emailWrapper">
+              <label for="email">Email:</label>
+              <input type="email" name="email" />
+            </div>
+
+            <div class="messageWrapper">
+              <label for="message">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="45"
+                rows="16"
+              ></textarea>
+            </div>
+
+            <button id="formSubmit">Submit</button>
+          </form>
         </div>
       </section>
     </main>
