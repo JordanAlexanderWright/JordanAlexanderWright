@@ -53,9 +53,9 @@
 
       <nav>
         <ul class="siteNav">
-          <li>About Me</li>
-          <li>Projects</li>
-          <li>Contact Me</li>
+          <li id="aboutMeNav" data="aboutMe">About Me</li>
+          <li id="projectsNav" data="projects">Projects</li>
+          <li id="idNav" data="id">Contact Me</li>
         </ul>
       </nav>
     </header>
@@ -63,7 +63,7 @@
     <hr />
 
     <main>
-      <section id="aboutMe">
+      <section id="aboutMe" class ='show'>
         <div class="aboutMeWrapper">
           <h2 id="aboutMeHeading">About Me</h2>
 
@@ -81,6 +81,19 @@
             dolor maximus commodo. Donec in tincidunt ex. Nulla sodales purus
             erat, in porttitor sapien volutpat vitae. Nam id mi porttitor,
             dignissim nisi et, congue erat. Praesent et pulvinar lacus.
+          </div>
+
+          <div class="experience">
+            EXP Aliquam nec dolor id mauris fermentum finibus. Nunc tortor
+            lectus, lobortis vitae est a, pretium pellentesque sem. Proin
+            hendrerit ultricies eleifend. Sed euismod dolor neque, a volutpat
+            lectus consectetur non. Etiam eget gravida justo, et imperdiet
+            risus. Donec ultrices enim eu ligula pharetra sagittis. Ut accumsan
+            nec metus feugiat pulvinar. Mauris at tellus vitae libero iaculis
+            auctor. Orci varius natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Mauris tincidunt, sapien a vulputate
+            placerat, odio nisi posuere elit, ut fermentum massa turpis ut nunc.
+            Mauris eu eros nisl. In quis dui sit amet nisl suscipit luctus.
           </div>
 
           <div class="technologies">
@@ -101,22 +114,12 @@
             srcset=""
             class="placeholderIMG"
           />
-          <div class="experience">
-            EXP Aliquam nec dolor id mauris fermentum finibus. Nunc tortor
-            lectus, lobortis vitae est a, pretium pellentesque sem. Proin
-            hendrerit ultricies eleifend. Sed euismod dolor neque, a volutpat
-            lectus consectetur non. Etiam eget gravida justo, et imperdiet
-            risus. Donec ultrices enim eu ligula pharetra sagittis. Ut accumsan
-            nec metus feugiat pulvinar. Mauris at tellus vitae libero iaculis
-            auctor. Orci varius natoque penatibus et magnis dis parturient
-            montes, nascetur ridiculus mus. Mauris tincidunt, sapien a vulputate
-            placerat, odio nisi posuere elit, ut fermentum massa turpis ut nunc.
-            Mauris eu eros nisl. In quis dui sit amet nisl suscipit luctus.
-          </div>
+        
         </div>
       </section>
 
-      <section id="projects">
+      <section id="projects" class = 'hide'>
+        <h2 id="projectHeading">Projects</h2>
         <div class="projectsContainer">
           <div class="projectOne projectWrapper project">
             <figure class="projectFigure">
@@ -127,7 +130,7 @@
               </figcaption>
             </figure>
             <p class="description">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              Lorem ipsum dolor sit amet
             </p>
             <ul>
                 <li>Vivamus vestibulum ntulla nec ante.</li>

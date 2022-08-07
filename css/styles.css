@@ -15,7 +15,7 @@ Pallet Codes
 }
 
 
-a:visited{
+a:visited {
     text-decoration: none;
     color: inherit;
 }
@@ -24,10 +24,44 @@ body {
     background-color: #CAD2C5;
 }
 
-main{
+main {
     margin-top: 20px;
+    display:flex;
+    flex-direction: column;
 }
 
 .testing {
     color: red;
+}
+
+.hide {
+    animation-name: hideAnimation;
+    animation-duration: .5s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hideAnimation {
+    from {
+        opacity: 1
+    } to {
+        opacity: 0
+    }
+}
+
+.show {
+    animation-name: showAnimation;
+    animation-duration: .5s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showAnimation{
+    from {
+        opacity: 0
+    } to {
+        opacity: 1
+    }
 }

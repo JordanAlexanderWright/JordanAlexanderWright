@@ -1,6 +1,6 @@
 #aboutMe{
     background-color: #52796F;
-    display:flex;
+    display: flex;
     margin: 0px 25% 0px;
 }
 
@@ -13,6 +13,7 @@
                          'technologies technologies technologies';
     margin: 15px 2% 15px;;
     background-color:#CAD2C5;
+    row-gap: 15px;
 }
 
 .placeholderIMG{
