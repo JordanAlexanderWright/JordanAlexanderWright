@@ -47,17 +47,12 @@ function showSection(e){
             currentSection.style.order = 1;
             console.log('New Section', newSection)
             newSection.style.order = 0;
-            newSection.classList.replace('hide', 'show');
-            
-            
-           
-        }, 500);
-        
-        
-    
-
-        // something.classList.replace('hide', 'show');
-        
+            if(newSection.classList.contains('hide')){
+                newSection.classList.replace('hide', 'show');
+            } else{
+                newSection.classList.add('show')
+            }                         
+        }, 500);        
     }
 }
 
