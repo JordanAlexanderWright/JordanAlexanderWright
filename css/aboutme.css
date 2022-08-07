@@ -2,6 +2,7 @@
     background-color: #52796F;
     display: flex;
     margin: 0px 20% 0px;
+    order: 0;
 }
 
 .aboutMeWrapper {

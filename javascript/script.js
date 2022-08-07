@@ -11,8 +11,6 @@
 let aboutMe = document.getElementById('aboutMe');
 let projects = document.getElementById('projects');
 
-sections = [aboutMe, projects]
-
 
 document.getElementById('aboutMeNav').addEventListener('click', showSection);
 document.getElementById('projectsNav').addEventListener('click', showSection);
@@ -25,28 +23,34 @@ function showSection(e){
     let sectionId;
     let splitName = e.target.innerHTML.split(' ');
 
-    if (splitName[1]){
-        
+    if (splitName[1]){        
         splitName[0] = splitName[0].toLowerCase();
         sectionId = splitName.join('');
+
     } else {
         sectionId = splitName[0].toLowerCase();
     }
 
-    let something = document.getElementById(sectionId);
+    let newSection = document.getElementById(sectionId);
+    console.log(newSection)
     
-    if (something.classList.contains('show')){
+    if (newSection.classList.contains('show')){
 
     } else {
        
-        let stuff = document.getElementsByClassName('show')
-        let otherContainer = stuff[0];        
-        stuff[0].classList.replace('show', 'hide');
+        let sectionContainer = document.getElementsByClassName('show')
+        let currentSection = sectionContainer[0];    
+        console.log(currentSection);    
+        currentSection.classList.replace('show', 'hide');
 
         setTimeout(() => {
-            something.classList.replace('hide', 'show');
-            something.style.order = 0;
-            otherContainer.style.order=1;
+            currentSection.style.order = 1;
+            console.log('New Section', newSection)
+            newSection.style.order = 0;
+            newSection.classList.replace('hide', 'show');
+            
+            
+           
         }, 500);
         
         

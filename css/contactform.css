@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   opacity: 0;
+  order: 1;
 }
 
 #message {
