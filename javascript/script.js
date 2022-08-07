@@ -16,6 +16,7 @@ sections = [aboutMe, projects]
 
 document.getElementById('aboutMeNav').addEventListener('click', showSection);
 document.getElementById('projectsNav').addEventListener('click', showSection);
+document.getElementById('contactMeNav').addEventListener('click', showSection);
 
 
 function showSection(e){
@@ -129,6 +130,9 @@ document.getElementById('formSubmit').addEventListener('click', (e) => {
             messageContainer.innerHTML = 'There was an error while submitting your form, please try again.'
             messageContainer.style.color = 'red'
             messageContainer.style.display = 'inline'
+            messageContainer.classList.add('showMessage')
+
+            setTimeout( () => messageContainer.classList.replace('showMessage', 'hideMessage'), 2000)
         }
     }
 

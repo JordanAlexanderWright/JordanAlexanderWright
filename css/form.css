@@ -1,5 +1,4 @@
 #contactMe {
-  order: -1;
   display: flex;
   justify-content: center;
 }
@@ -22,8 +21,7 @@
     "message message"
     "button button"
     "response response";
-    row-gap:20px;
-    
+    row-gap:20px;    
 }
 
 #contactForm > * {
