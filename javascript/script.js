@@ -68,7 +68,7 @@ let requestOptions = {
 //     .catch(error => console.log('error', error));
 //   })
 
-document.getElementById('formSubmit').addEventListener('click', (e) => {
+document.getElementById('submitButton').addEventListener('click', (e) => {
     e.preventDefault()
     console.log('hello');
     let userName = document.getElementById('nameField').value;
