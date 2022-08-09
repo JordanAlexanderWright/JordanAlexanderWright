@@ -2,6 +2,25 @@
     opacity: 0;
     order: 1;
 }
+
+
+#projectHeading{
+    color:#CAD2C5;
+    margin-top: 10px;
+    text-align:center;
+    font-size:2.5em;
+    text-decoration: underline;
+}
+
+.projectsWrapper {
+   border: solid 5px;
+   margin: 0px 25px 0px 25px;
+   padding-bottom: 20px;
+   background-color:#2F3E46;
+   box-shadow: 1px -1px 30px 5px rgba(0,0,0,0.45);
+   -webkit-box-shadow: 1px -1px 30px 5px rgba(0,0,0,0.45);
+   -moz-box-shadow: 1px -1px 30px 5px rgba(0,0,0,0.45);   
+}
 .projectsContainer {
     display: flex;
     justify-content: space-evenly;
@@ -53,6 +72,7 @@ figure {
     flex-direction: column;
     align-items: center;
     row-gap:10px;
+   
 }
 
 .projectFigure {
@@ -76,14 +96,10 @@ figure {
     background-color:#354f52;
     padding: 25px;
     width:500px;
+    border: ridge 5px;
+    border-color: #CAD2C5;
 }
 
 .description, #projects li{
     color: #CAD2C5;
-}
-
-#projectHeading{
-    text-align:center;
-    font-size:2.5em;
-    text-decoration: underline;
 }
