@@ -42,6 +42,7 @@
     grid-area: header;
     justify-self: center;
     text-decoration: underline;
+    size: 2.5em;
 }
 
 .devlopment {

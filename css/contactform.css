@@ -13,6 +13,10 @@
   padding: 30px 30px 10px ;
   background-color: #2F3E46;
   margin-bottom: 15px;
+
+  box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px -1px 6px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.75);
 }
 
 #contactForm {
@@ -48,20 +52,35 @@
 .messageWrapper {
   grid-area: message;
   flex-direction:column;
+  
 }
 
-#formSubmit{
+#submitButton{
     font-size: 1.5em;
-    background-color: #CAD2C5;
-    color: #354f52;
-    border-radius: 15px;
+    background-color: #52796F;
+    color: #CAD2C5;
+    border-radius: 5px;
     justify-self: center;
     align-self: center;
     margin-top: 15px;
-    padding: 8px 15px 8px;
-    grid-area: button;    
+    padding: 5px 10px;
+
+    border: hidden;
+   
+    
+    grid-area: button;   
+    
+    transition: all .25s;
+
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30); 
 }
 
+#submitButton:hover{
+   background-color: #46665e ; 
+   color: #c1c9bc; 
+}
 .thankYou{
     width: 350px;
     height: fit-content;
@@ -75,8 +94,8 @@
     margin-top:20px;
     z-index: 1;
    box-shadow: -27px 25px 3px -12px rgba(0,0,0,0.26);
--webkit-box-shadow: -27px 25px 3px -12px rgba(0,0,0,0.26);
--moz-box-shadow: -27px 25px 3px -12px rgba(0,0,0,0.26);
+   -webkit-box-shadow: -27px 25px 3px -12px rgba(0,0,0,0.26);
+   -moz-box-shadow: -27px 25px 3px -12px rgba(0,0,0,0.26);
 }
 
 .thankYou p, #thanksHeading{
