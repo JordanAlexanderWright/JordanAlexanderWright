@@ -29,6 +29,7 @@
     max-height: 400px;
     padding-right: 50px;
     grid-area: picture;
+    padding-left: 20px;
 }
 
 .listContainer{

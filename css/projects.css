@@ -67,13 +67,16 @@ figure {
     max-width:fit-content;
 }
 
-.projectWrapper {
+/* .projectWrapper {
     display:flex;
     flex-direction: column;
     align-items: center;
     row-gap:10px;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30); 
    
-}
+} */
 
 .projectFigure {
     display:flex;
@@ -98,6 +101,14 @@ figure {
     width:500px;
     border: ridge 5px;
     border-color: #CAD2C5;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap:10px;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30); 
 }
 
 .description, #projects li{
