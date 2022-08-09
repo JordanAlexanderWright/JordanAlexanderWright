@@ -14,7 +14,6 @@ Pallet Codes
     color: #2F3E46;
 }
 
-
 a:visited {
     text-decoration: none;
     color: inherit;
@@ -65,3 +64,14 @@ main {
         opacity: 1
     }
 }
+
+@media screen and (min-width: 1345px) {
+
+    .siteNav {
+        flex-direction: row;
+        column-gap: 40px;
+    }
+
+ 
+}
+

@@ -38,6 +38,13 @@ nav {
 
 .siteNav li {
     font-size: 1.5em;
+    text-decoration: underline .15em rgba(0,0,0,0);
+    transition: text-decoration 1s;
+    cursor:pointer
+}
+
+.siteNav li:hover{
+    text-decoration-color: rgba(0,0,0,1);
 }
 /* Headshot Card */
 

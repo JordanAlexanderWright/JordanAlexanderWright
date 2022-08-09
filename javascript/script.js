@@ -1,12 +1,3 @@
-// document.getElementById('aboutMeNav').addEventListener('click', () => 
-// {   
-//     document.getElementById('aboutMe').classList.remove('show')
-//     document.getElementById('aboutMe').classList.add('hide')
-// });
-
-// document.getElementById('projectsNav').addEventListener('click', () =>{
-//     document.getElementById('projects').classList.add('show');
-// });
 
 let aboutMe = document.getElementById('aboutMe');
 let projects = document.getElementById('projects');
