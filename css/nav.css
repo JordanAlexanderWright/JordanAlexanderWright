@@ -21,7 +21,7 @@ h1 {
 nav {
   grid-area: "navigation";
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: end;
   padding-bottom: 20px;
   padding-right: 20px;

@@ -1,5 +1,5 @@
 #aboutMe {
-    background-color: #52796F;
+    background-color: #354f52;
     display: flex;
     margin: 0px 20% 0px;
     order: 0;
@@ -13,9 +13,15 @@
                          'performance  performance picture'
                          'teaching teaching teaching'
                         ;
-    margin: 15px 2% 15px;;
+    margin: 40px;
     background-color:#CAD2C5;
     row-gap: 15px;
+    border: ridge 5px;
+    border-color:#2F3E46;
+    padding: 25px;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30); 
 }
 
 .placeholderIMG {
@@ -25,6 +31,12 @@
     grid-area: picture;
 }
 
+.listContainer{
+    display:flex;
+    flex-wrap: nowrap;
+    align-items:center;
+    padding: 15px 0px;
+}
 #aboutMeHeading {
     grid-area: header;
     justify-self: center;
