@@ -1,4 +1,4 @@
-#aboutMe{
+#aboutMe {
     background-color: #52796F;
     display: flex;
     margin: 0px 20% 0px;
@@ -9,37 +9,54 @@
     display: grid;
     width: fit-content;
     grid-template-areas: 'header header header'
-                         'education education picture '
-                         'experience experience picture'
-                         'technologies technologies technologies';
+                         'development development picture'
+                         'performance  performance picture'
+                         'teaching teaching teaching'
+                        ;
     margin: 15px 2% 15px;;
     background-color:#CAD2C5;
     row-gap: 15px;
 }
 
-.placeholderIMG{
+.placeholderIMG {
     max-width: 200px;
     max-height: 400px;
     padding-right: 50px;
     grid-area: picture;
 }
 
- #aboutMeHeading{
+#aboutMeHeading {
     grid-area: header;
     justify-self: center;
     text-decoration: underline;
 }
 
-.education {
-    grid-area: education;
+.devlopment {
+    grid-area: development;
 }
 
-.experience{
-    grid-area: experience;
-
+.performance {
+    grid-area: performance;
 }
 
-.technologies{
-    grid-area: technologies;
+.teaching {
+    grid-area: teaching;
 } 
 
+.projectHeader{
+    color: #CAD2C5;
+}
+
+.projectInformation > *{
+    color: #CAD2C5;
+}
+
+.projectInformation{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.projectInformation ul li{
+    margin: 10px;
+}
