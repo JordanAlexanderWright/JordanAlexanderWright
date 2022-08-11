@@ -46,6 +46,10 @@
     .siteNav{
         display:flex;
     }
+
+    #aboutMe{
+        margin: 0px 10% 0px;
+    }
 }
 
 @media screen and (min-width: 637){

@@ -1,5 +1,5 @@
 #contactMe {
-  display: flex;
+  display: none;
   justify-content: center;
   opacity: 0;
   order: 1;

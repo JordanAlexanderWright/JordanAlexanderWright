@@ -1,7 +1,6 @@
 #aboutMe {
     background-color: #354f52;
     display: flex;
-    margin: 0px 10% 0px;
     order: 0;
 }
 
@@ -38,6 +37,7 @@
     align-items:center;
     padding: 15px 0px;
 }
+
 #aboutMeHeading {
     grid-area: header;
     justify-self: center;

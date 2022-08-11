@@ -1,6 +1,7 @@
 #projects{
     opacity: 0;
     order: 1;
+    display: none;
 }
 
 
