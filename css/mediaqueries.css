@@ -7,20 +7,10 @@
     .siteNav {
         flex-direction: row;
         column-gap: 40px;
-    }
-
- 
+    } 
 }
 
-
-@media screen and (min-width: 1065px){
-
-    h1 {
-        font-size: 4em;
-    }
-}
-
-@media screen and (min-width: 955px){
+@media screen and (min-width: 850px){
     .cardholder{
         width: 400px;
     }
@@ -43,20 +33,33 @@
 }
 
 @media screen and (min-width: 805px){
-    .hamburger{
-        display:none;
+
+    #aboutMe{
+        margin: 0px 10% 0px;
     }
+
+}
+
+@media screen and (min-width: 675px){
+    .siteNav {
+        flex-direction: row;
+        column-gap: 30px;
+    } 
 
     .siteNav{
         display:flex;
     }
 
-    #aboutMe{
-        margin: 0px 10% 0px;
+    .hamburger{
+        display: none;
     }
+
+    header{
+        flex-direction: row;
+    }       
 }
 
-@media screen and (min-width: 637){
+@media screen and (min-width: 637px){
     h1{
         flex-shrink: 0;
     }

@@ -1,12 +1,10 @@
 header {
   display: flex;
+  flex-direction: column;
   width: 100%;
   flex-wrap: nowrap;
-  grid-template-areas: "card name navigation";
-  /* align-items: center; */
   column-gap: 15px;
-  justify-content:space-between
-
+  justify-content: flex-start;
 }
 
 h1 {
@@ -14,16 +12,18 @@ h1 {
   align-self: center;
   justify-self: center;
   color: #2f3e46;
+  text-decoration:underline;
+  flex-shrink: 0;
   /* width: 33%; */
 }
 
 /* Headshot Card */
 
 .cardholder {
-  grid-area: "card";
   width: 250px;
   background-color: #52796f;
   padding: 20px;
+  margin-right:0;
 }
 
 .infocard {
@@ -66,15 +66,21 @@ h1 {
 /* Navigation  */
 nav {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: end;
-  /* padding-bottom: 20px; */
+  align-items: center;
+  margin-left:auto;
+  margin-right:auto;
+  row-gap: 20px;
   margin-bottom: 20px;
   padding-right: 20px;
-
 }
 
-.hamburger > *{
+.flexboxFix{
+  width:400px;
+}
+
+.hamburger > *{  
   width:35px;
   height: 5px;
   background-color: black;
@@ -83,19 +89,18 @@ nav {
 
 .siteNav {
   display: none;
-  row-gap: 20px;
   flex-direction: column;
-  align-items: center;
+  row-gap: 20px;
   list-style: none;
 }
 
-.siteNav li {
+.siteNav > * {
   font-size: 1.5em;
   text-decoration: underline 0.15em rgba(0, 0, 0, 0);
   transition: text-decoration 1s;
   cursor: pointer;
 }
 
-.siteNav li:hover {
+.siteNav > *:hover {
   text-decoration-color: rgba(0, 0, 0, 1);
 }
