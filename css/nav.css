@@ -1,6 +1,7 @@
 header {
   display: flex;
   width: 100%;
+  flex-wrap: nowrap;
   grid-template-areas: "card name navigation";
   /* align-items: center; */
   column-gap: 15px;
@@ -9,46 +10,18 @@ header {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
   align-self: center;
   justify-self: center;
   color: #2f3e46;
   /* width: 33%; */
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  /* padding-bottom: 20px; */
-  margin-bottom: 20px;
-  padding-right: 20px;
-
-}
-
-.siteNav {
-  display: flex;
-  row-gap: 20px;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-}
-
-.siteNav li {
-  font-size: 1.5em;
-  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
-  transition: text-decoration 1s;
-  cursor: pointer;
-}
-
-.siteNav li:hover {
-  text-decoration-color: rgba(0, 0, 0, 1);
-}
 /* Headshot Card */
 
 .cardholder {
   grid-area: "card";
-  width: 400px;
+  width: 250px;
   background-color: #52796f;
   padding: 20px;
 }
@@ -68,9 +41,9 @@ nav {
 }
 
 #headshot {
-  border-radius: 100px;
-  max-width: 175px;
-  max-height: 175px;
+  border-radius: 50px;
+  max-width: 75px;
+  max-height: 75px;
 }
 
 #medialinks {
@@ -83,28 +56,46 @@ nav {
   list-style: none;
 }
 
-.fa-circle {
-  z-index: 1;
-  color: white;
-}
-
-.emailIcon {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 48px;
-  height: 48px;
-}
-
 .mediaLink {
   margin-top: 3px;
-  width: 48px;
-  height: 48px;
+  width: 35px;
+  height: 35px;
 }
 
-.fa-envelope {
-  color: #354f52;
-  z-index: 2;
-  margin-left: -40px;
-  margin-top: 11px;
+
+/* Navigation  */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  /* padding-bottom: 20px; */
+  margin-bottom: 20px;
+  padding-right: 20px;
+
+}
+
+.hamburger > *{
+  width:35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.siteNav {
+  display: none;
+  row-gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.siteNav li {
+  font-size: 1.5em;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  transition: text-decoration 1s;
+  cursor: pointer;
+}
+
+.siteNav li:hover {
+  text-decoration-color: rgba(0, 0, 0, 1);
 }

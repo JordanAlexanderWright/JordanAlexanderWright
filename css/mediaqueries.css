@@ -1,0 +1,55 @@
+@media screen and (min-width: 1345px) {
+
+    .siteNav {
+        flex-direction: row;
+        column-gap: 40px;
+    }
+
+ 
+}
+
+
+@media screen and (min-width: 1065px){
+
+    h1 {
+        font-size: 4em;
+    }
+}
+
+@media screen and (min-width: 955px){
+    .cardholder{
+        width: 400px;
+    }
+
+    #headshot{
+        max-width: 175px;
+        max-height: 175px;
+    }
+
+    .emailIcon{
+        width: 48px;
+        height: 48px;
+    }
+
+    .mediaLink {
+        width: 48px;
+        height: 48px;
+      }
+      
+}
+
+@media screen and (min-width: 805px){
+    .hamburger{
+        display:none;
+    }
+
+    .siteNav{
+        display:flex;
+    }
+}
+
+@media screen and (min-width: 637){
+    h1{
+        flex-shrink: 0;
+    }
+}
