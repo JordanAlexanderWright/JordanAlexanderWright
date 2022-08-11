@@ -7,10 +7,11 @@ document.getElementById('aboutMeNav').addEventListener('click', showSection);
 document.getElementById('projectsNav').addEventListener('click', showSection);
 document.getElementById('contactMeNav').addEventListener('click', showSection);
 
+// This function handles the navigation transitions
 
 function showSection(e){
-    console.log(e.target);
-    console.log(e.target.innerHTML);
+
+    //getting the section ID from parsing target html
     let sectionId;
     let splitName = e.target.innerHTML.split(' ');
 
@@ -23,27 +24,33 @@ function showSection(e){
     }
 
     let newSection = document.getElementById(sectionId);
-    console.log(newSection)
     
+    // Checking to make sure the current section isn't already selected, then hiding / showing what is needed
     if (newSection.classList.contains('show')){
 
     } else {
        
         let sectionContainer = document.getElementsByClassName('show')
         let currentSection = sectionContainer[0];    
-        console.log(currentSection);    
+        console.log(currentSection);  
         currentSection.classList.replace('show', 'hide');
 
+        // setTimeout to let the hide animation finish
         setTimeout(() => {
-            currentSection.style.order = 1;
-            console.log('New Section', newSection)
+            currentSection.style.display = 'none';
+
             newSection.style.order = 0;
             if(newSection.classList.contains('hide')){
                 newSection.classList.replace('hide', 'show');
             } else{
                 newSection.classList.add('show')
-            }                         
-        }, 500);        
+            }  
+            if (sectionId == 'aboutMe' || sectionId == 'contactMe'){
+                newSection.style.display = 'flex'
+            } else {
+                newSection.style.display = 'unset'
+            }                      
+        }, 500);
     }
 }
 
