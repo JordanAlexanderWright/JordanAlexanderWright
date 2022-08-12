@@ -42,13 +42,17 @@
 
 @media screen and (min-width: 640px){
     nav {
-        display: flex;
         flex-direction: row;
         column-gap:20px;
-        align-items:center
+        align-items:center;
+        max-height: fit-content;
+        overflow: visible;
+        background-color: inherit;
+        padding-left: 0;
+        border: 0px;
     } 
 
-    .hamburger{
+    #hamburger{
         display: none;
     }
 
@@ -96,8 +100,6 @@
       }
 
 }
-
-
 
 @media screen and (min-width: 600px){
     .projectsWrapper{

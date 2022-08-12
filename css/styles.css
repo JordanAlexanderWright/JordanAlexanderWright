@@ -29,6 +29,9 @@ main {
     flex-direction: column;
 }
 
+hr{
+    border-top: 2px solid;    
+}
 .testing {
     color: red;
 }
