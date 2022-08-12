@@ -1,8 +1,16 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
 #contactMe {
   display: none;
-  justify-content: center;
   opacity: 0;
   order: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #message {
@@ -10,6 +18,7 @@
 }
 
 .formWrapper {
+  width: 90%;
   padding: 30px 30px 10px ;
   background-color: #2F3E46;
   margin-bottom: 15px;
@@ -51,8 +60,11 @@
 
 .messageWrapper {
   grid-area: message;
-  flex-direction:column;
-  
+  flex-direction:column;  
+}
+
+#messageField{
+  height: 250px;
 }
 
 #submitButton{
@@ -64,9 +76,7 @@
     align-self: center;
     margin-top: 15px;
     padding: 5px 10px;
-
-    border: hidden;
-   
+    border: hidden; 
     
     grid-area: button;   
     
@@ -81,21 +91,24 @@
    background-color: #46665e ; 
    color: #c1c9bc; 
 }
+
 .thankYou{
-    width: 350px;
+    margin-bottom: -15px;
+    margin-left: 10px;
+    margin-right: 10px;
     height: fit-content;
     background-color:#52796F;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
     align-items: center;
-    padding:20px;
-    margin-right: -20px;
-    margin-top:20px;
+    padding: 20px;
     z-index: 1;
-   box-shadow: -27px 25px 3px -12px rgba(0,0,0,0.26);
-   -webkit-box-shadow: -27px 25px 3px -12px rgba(0,0,0,0.26);
-   -moz-box-shadow: -27px 25px 3px -12px rgba(0,0,0,0.26);
+
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30); 
+   
 }
 
 .thankYou p, #thanksHeading{
@@ -104,16 +117,6 @@
 
 #thanksHeading{
     text-decoration: underline;
-}
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-}
-
-.fa-envelope {
-    size: 5em;
-    color: #2F3E46;
 }
 
 #responseMessage{

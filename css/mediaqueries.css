@@ -71,6 +71,30 @@
         order:0;
     }
 
+    #contactMe {
+        flex-direction: row;
+        align-items:baseline;
+        justify-content: center;
+    }
+
+    .formWrapper{
+        padding: 30px 30px 10px ;
+        width: max-content;
+    }
+
+    #messageField {
+        width: 350px;
+        height: 250px;
+      }
+
+      .thankYou{
+        width: 350px;
+        margin-right: -20px;
+        box-shadow: -27px 25px 3px -12px rgba(0,0,0,0.26);
+        -webkit-box-shadow: -27px 25px 3px -12px rgba(0,0,0,0.26);
+        -moz-box-shadow: -27px 25px 3px -12px rgba(0,0,0,0.26);
+      }
+
 }
 
 
@@ -88,4 +112,8 @@
         margin: 40px;
         padding: 25px;
     }
+}
+
+@media screen and (min-width: 400px){
+
 }
