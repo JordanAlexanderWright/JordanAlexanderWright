@@ -7,17 +7,18 @@
 .aboutMeWrapper {
     display: grid;
     width: fit-content;
-    grid-template-areas: 'header header header'
-                         'development development picture'
-                         'performance  performance picture'
-                         'teaching teaching teaching'
+    grid-template-areas: 'header       header      header'
+                         'picture      picture     picture'
+                         'development  development development'
+                         'performance  performance performance'
+                         'teaching     teaching    teaching'
                         ;
-    margin: 40px;
+    margin: 10px;
     background-color:#CAD2C5;
     row-gap: 15px;
     border: ridge 5px;
     border-color:#2F3E46;
-    padding: 25px;
+    padding: 8px;
     box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
     -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
     -moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30); 
@@ -26,9 +27,8 @@
 .placeholderIMG {
     max-width: 200px;
     max-height: 400px;
-    padding-right: 50px;
-    grid-area: picture;
-    padding-left: 20px;
+    grid-area: picture;   
+    justify-self: center;
 }
 
 .listContainer{

@@ -79,4 +79,13 @@
     .projectsWrapper{
         margin: 0px 25px 0px 25px;
     }
+
+    .aboutMeWrapper{
+        grid-template-areas: 'header header header'
+        'development development picture'
+        'performance  performance picture'
+        'teaching teaching teaching';
+        margin: 40px;
+        padding: 25px;
+    }
 }
