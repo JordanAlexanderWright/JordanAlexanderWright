@@ -6,7 +6,7 @@
 
     .siteNav {
         flex-direction: row;
-        column-gap: 40px;
+        justify-content: space-between;
     } 
 }
 
@@ -42,13 +42,11 @@
 
 @media screen and (min-width: 675px){
     .siteNav {
+        display: flex;
         flex-direction: row;
-        column-gap: 30px;
+        column-gap:20px;
+        align-items:center
     } 
-
-    .siteNav{
-        display:flex;
-    }
 
     .hamburger{
         display: none;
