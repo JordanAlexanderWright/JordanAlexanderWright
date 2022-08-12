@@ -29,27 +29,42 @@ function showSection(e){
     if (newSection.classList.contains('show')){
 
     } else {
+        // NavigationCheck will run if hamburger menu exists
+       
+        if (document.documentElement.clientWidth < 640){
+            navigationCheck()
+        }
        
         let sectionContainer = document.getElementsByClassName('show')
         let currentSection = sectionContainer[0];    
-        console.log(currentSection);  
-        currentSection.classList.replace('show', 'hide');
-
+        
+        try {
+            currentSection.classList.replace('show', 'hide');
+        } catch {
+            //User is clicking the same section
+        }
+       
         // setTimeout to let the hide animation finish
         setTimeout(() => {
-            currentSection.style.display = 'none';
 
-            newSection.style.order = 0;
-            if(newSection.classList.contains('hide')){
-                newSection.classList.replace('hide', 'show');
-            } else{
-                newSection.classList.add('show')
-            }  
-            if (sectionId == 'aboutMe' || sectionId == 'contactMe'){
-                newSection.style.display = 'flex'
-            } else {
-                newSection.style.display = 'unset'
-            }                      
+            try{
+                currentSection.style.display = 'none';
+
+                newSection.style.order = 0;
+                if(newSection.classList.contains('hide')){
+                    newSection.classList.replace('hide', 'show');
+                } else{
+                    newSection.classList.add('show')
+                }  
+                if (sectionId == 'aboutMe' || sectionId == 'contactMe'){
+                    newSection.style.display = 'flex'
+                } else {
+                    newSection.style.display = 'unset'
+                }  
+            } catch{
+                console.log('I see you are trying to break me')
+            }
+                               
         }, 500);
     }
 }
@@ -65,15 +80,6 @@ let requestOptions = {
     // 'Content-Type': 'application/x-www-form-urlencoded',
   },
 };
-
-// document.getElementById('formSubmit').addEventListener('click', (e) => {
-//     e.preventDefault()
-//     console.log('hello');
-//     fetch("https://www.actionforms.io/e/r/portfolio-forms", requestOptions)
-//     .then(response => response.text())
-//     .then(result => console.log(result))
-//     .catch(error => console.log('error', error));
-//   })
 
 document.getElementById('submitButton').addEventListener('click', (e) => {
     e.preventDefault()
@@ -135,3 +141,22 @@ document.getElementById('submitButton').addEventListener('click', (e) => {
 
     let messageContainer = document.getElementById('responseMessage')
     // messageContainer.style.display = 'inline'
+
+// hamburger menu events
+
+document.getElementById('hamburger').addEventListener('click', () => {
+
+    navigation = document.getElementsByTagName('nav')[0]
+    navigationCheck();
+})
+
+function navigationCheck(){
+    
+    if (navigation.style.maxHeight){
+        navigation.style.maxHeight = null;
+        navigation.style.overflow = 'hidden';
+    } else {
+        navigation.style.maxHeight = '200px';
+        navigation.style.overflow = 'visible';
+    }
+}

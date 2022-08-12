@@ -75,11 +75,12 @@ h1 {
 }
 
 #hamburger {
+  padding-top:5px;
   order: 5;
   background-color: #2F3E46;
 }
 
-#hamburger > *{  
+#hamburger > *{
   width:35px;
   height: 5px;
   background-color: black;
