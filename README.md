@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hello! 👋
 
 <!--
 **JordanAlexanderWright/JordanAlexanderWright** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -14,13 +14,21 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-Resources: 
 
-The LinkedIn Icon was made by RobDesigns, found here:
-https://designermarket.gumroad.com/l/ios7?recommended_by=library
-RobDesigns Icons
+**My Portfolio Site**:
+---
+Thanks for taking a look at my Portfolio Site!   
+I built everything from scratch, except for the icons and images, please check out the acknowledgments below
 
-Playstation 5 Photo was taken by Kerde Severin, and used from Unsplash.
+
+**Acknowledgements**
+---
+
+The LinkedIn Icon was made by RobDesigns  
+Link: https://designermarket.gumroad.com/l/ios7?recommended_by=library
+
+
+Playstation 5 Photo was taken by Kerde Severin, and used from Unsplash.  
 Link: https://unsplash.com/s/photos/playstation-5?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
   
 StarCraft 2 and all assest related to StarCraft all belong to Blizzard Entertainment, Inc.
