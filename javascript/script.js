@@ -81,7 +81,6 @@ document.getElementById('submitButton').addEventListener('click', (e) => {
     switch(true){
     case (userName && emailAddress && message && emailAddress.includes('@')):
         {
-        console.log(userName, emailAddress, message);
 
         let contactData = {
             name: userName,
@@ -99,21 +98,14 @@ document.getElementById('submitButton').addEventListener('click', (e) => {
         }
 
         fetch("https://www.actionforms.io/e/r/portfolio-forms", requestPayload)
-            .then(response => {
-                if (response.status === 200) {
-                    console.log('Yep!');               
-                }
-
-                showMessage('it worked', response.status)
-                return response.text()
+            .then(response => {              
+                showMessage('Returned Response', response.status)
             })
-            .then(text => console.log(text))
-            .catch(error => console.log('error', error));
         
         break;
         }
     
-    case (!userName || !emailAddress || !message):     
+    case (!userName || !emailAddress || !message):  
         showMessage('Please fill out all fields');  
         break;  
 
@@ -129,16 +121,15 @@ document.getElementById('submitButton').addEventListener('click', (e) => {
 function showMessage (message = 'An Error occured, please try again', responseCode = 0,){
     let messageContainer = document.getElementById('responseMessage')
 
-
     if (responseCode === 200) { 
-        message = 'Thank You! Your Response Was Submitted'    
+        message = " Thank You! Your Response Was Submitted"    
         messageContainer.style.color = '#CAD2C5';
  
     } else {
-        messageContainer.innerHTML = message;
         messageContainer.style.color = 'red';
     }
 
+    messageContainer.innerHTML = message;
     messageContainer.classList.add('showMessage');
     
     setTimeout( () => {
