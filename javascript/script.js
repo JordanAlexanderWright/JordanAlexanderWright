@@ -1,7 +1,4 @@
-
-let aboutMe = document.getElementById('aboutMe');
-let projects = document.getElementById('projects');
-
+// Adding event listeners to navigation
 
 document.getElementById('aboutMeNav').addEventListener('click', showSection);
 document.getElementById('projectsNav').addEventListener('click', showSection);
