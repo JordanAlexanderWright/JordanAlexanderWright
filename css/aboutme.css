@@ -52,6 +52,7 @@
 #aboutMe p {
     margin-top:10px;
 }
+
 .devlopment {
     grid-area: development;
 }
@@ -64,20 +65,4 @@
     grid-area: etc;
 } 
 
-.projectHeader{
-    color: #CAD2C5;
-}
 
-.projectInformation > *{
-    color: #CAD2C5;
-}
-
-.projectInformation{
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
-.projectInformation ul li{
-    margin: 10px;
-}

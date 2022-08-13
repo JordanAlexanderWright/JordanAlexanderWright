@@ -5,6 +5,23 @@
      margin-bottom: 15px;
 }
 
+.project {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#354f52;
+    padding: 25px;
+    max-width:500px;
+    border: ridge 5px;
+    border-color: #CAD2C5;
+
+   
+    row-gap:10px;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30); 
+}
 
 #projectHeading{
     color:#CAD2C5;
@@ -34,7 +51,14 @@
 
 .projectsContainer img {
     max-width: 100%;
-    max-height: 250px;
+    max-height: 200px;
+    border-style: 2px solid black;
+
+    row-gap:10px;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30); 
+
 }
 
 .projectFigure figcaption { 
@@ -86,26 +110,38 @@ figure {
 .projectDescription{
     font-size: 1.24em;
     margin-top: .25em;
-}
-
-.project {
-
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:#354f52;
-    padding: 25px;
-    max-width:500px;
-    border: ridge 5px;
-    border-color: #CAD2C5;
-
-   
-    row-gap:10px;
-    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
-    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30);
-    -moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.30); 
+    height: 100%;
 }
 
 .description, #projects li{
     color: #CAD2C5;
 }
+
+.projectHeader{
+    color: #CAD2C5;
+}
+
+.projectInformation{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top:20px;
+}
+
+.projectInformation > *{
+    color: #CAD2C5;
+}
+
+.projectInformation h4:nth-of-type(2){  
+    margin-top: 20px;
+}
+.githubLink{
+    margin-top: auto;
+    padding-top:50px;
+    color: #CAD2C5;
+}
+
+.projectInformation ul li{
+    margin: 10px;
+}
+
