@@ -1,125 +1,120 @@
-@media screen and (min-width:1600px){
+@media screen and (min-width: 600px) {
+  .projectsWrapper {
+    margin: 0px 25px 0px 25px;
+  }
+
+  .aboutMeWrapper {
+    grid-template-areas:
+      "header header header"
+      "development development picture"
+      "performance  performance picture"
+      "etc          etc         etc";
+    margin: 40px;
+    padding: 25px;
+  }
+
+  #aboutMe {
+    margin: 0px 25px 0px 25px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  nav {
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+    max-height: fit-content;
+    overflow: visible;
+    background-color: inherit;
+    padding-left: 0;
+    border: 0px;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  header {
+    flex-direction: row;
+  }
+
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 20px;
+  }
+
+  .cardholder {
+    width: 250px;
+    order: 0;
+  }
+
+  #contactMe {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .formWrapper {
+    padding: 30px 30px 10px;
+    width: max-content;
+  }
+
+  #messageField {
+    width: 350px;
+    height: 250px;
+  }
+
+  .thankYou {
+    width: 350px;
+    margin-right: -20px;
+    box-shadow: -27px 25px 3px -12px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: -27px 25px 3px -12px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: -27px 25px 3px -12px rgba(0, 0, 0, 0.26);
+  }
+
+  #placeholderIMG{
+    margin-left:25px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .cardholder {
+    width: 400px;
+  }
+
+  #headshot {
+    max-width: 175px;
+    max-height: 175px;
+  }
+
+  .emailIcon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .mediaLink {
+    width: 48px;
+    height: 48px;
+  }
+
+  .placeholderIMG {
+    margin-left: 100px;
+    margin-right: 50px;
+}
 
 }
 
 @media screen and (min-width: 1345px) {
 
-    .siteNav {
-        flex-direction: row;
-        justify-content: space-between;
-    } 
-}
+  #aboutMe {
+    max-width: 1400px;
 
-@media screen and (min-width: 850px){
-    .cardholder{
-        width: 400px;
-    }
-
-    #headshot{
-        max-width: 175px;
-        max-height: 175px;
-    }
-
-    .emailIcon{
-        width: 48px;
-        height: 48px;
-    }
-
-    .mediaLink {
-        width: 48px;
-        height: 48px;
-      }
-      
-}
-
-@media screen and (min-width: 805px){
-
-    #aboutMe{
-        margin: 0px 10% 0px;
-    }
-
-}
-
-@media screen and (min-width: 640px){
-    nav {
-        flex-direction: row;
-        column-gap:20px;
-        align-items:center;
-        max-height: fit-content;
-        overflow: visible;
-        background-color: inherit;
-        padding-left: 0;
-        border: 0px;
-    } 
-
-    #hamburger{
-        display: none;
-    }
-
-    header{
-        flex-direction: row;
-    }   
-    
-    .flexContainer{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left:auto;
-        margin-right:auto;
-        row-gap: 20px;
-    }
-
-    .cardholder{
-        width: 250px;
-        order:0;
-    }
-
-    #contactMe {
-        flex-direction: row;
-        align-items:baseline;
-        justify-content: center;
-    }
-
-    .formWrapper{
-        padding: 30px 30px 10px ;
-        width: max-content;
-    }
-
-    #messageField {
-        width: 350px;
-        height: 250px;
-      }
-
-      .thankYou{
-        width: 350px;
-        margin-right: -20px;
-        box-shadow: -27px 25px 3px -12px rgba(0,0,0,0.26);
-        -webkit-box-shadow: -27px 25px 3px -12px rgba(0,0,0,0.26);
-        -moz-box-shadow: -27px 25px 3px -12px rgba(0,0,0,0.26);
-      }
-
-}
-
-@media screen and (min-width: 600px){
-    .projectsWrapper{
-        margin: 0px 25px 0px 25px;
-    }
-
-    .aboutMeWrapper{
-        grid-template-areas: 'header header header'
-        'development development picture'
-        'performance  performance picture'
-        'teaching teaching teaching';
-        margin: 40px;
-        padding: 25px;
-    }
-
-    #aboutMe{
-        margin: 0px 25px 0px 25px;
-    }
-}
-
-@media screen and (min-width: 400px){
-
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

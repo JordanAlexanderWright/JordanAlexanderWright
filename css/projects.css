@@ -16,13 +16,13 @@
 
 .projectsWrapper {
    border: solid 5px;
-
    padding-bottom: 20px;
    background-color:#2F3E46;
    box-shadow: 1px -1px 30px 5px rgba(0,0,0,0.45);
    -webkit-box-shadow: 1px -1px 30px 5px rgba(0,0,0,0.45);
    -moz-box-shadow: 1px -1px 30px 5px rgba(0,0,0,0.45);   
 }
+
 .projectsContainer {
     display: flex;
     justify-content: space-evenly;
@@ -33,8 +33,8 @@
 }
 
 .projectsContainer img {
-    width: 300px;
-    height: 250px;
+    max-width: 100%;
+    max-height: 250px;
 }
 
 .projectFigure figcaption { 
@@ -96,7 +96,7 @@ figure {
     align-items: center;
     background-color:#354f52;
     padding: 25px;
-    width:500px;
+    max-width:500px;
     border: ridge 5px;
     border-color: #CAD2C5;
 

@@ -2,7 +2,6 @@
     background-color: #354f52;
     display: flex;
     order: 0;
-    
     box-shadow: 1px -1px 30px 5px rgba(0,0,0,0.45);
    -webkit-box-shadow: 1px -1px 30px 5px rgba(0,0,0,0.45);
    -moz-box-shadow: 1px -1px 30px 5px rgba(0,0,0,0.45);   
@@ -15,7 +14,7 @@
                          'picture      picture     picture'
                          'development  development development'
                          'performance  performance performance'
-                         'teaching     teaching    teaching'
+                         'etc          etc         etc'
                         ;
     margin: 10px;
     background-color:#CAD2C5;
@@ -33,6 +32,8 @@
     max-height: 400px;
     grid-area: picture;   
     justify-self: center;
+    align-self: center;
+    margin-left:25px;
 }
 
 .listContainer{
@@ -49,6 +50,9 @@
     size: 2.5em;
 }
 
+#aboutMe p {
+    margin-top:10px;
+}
 .devlopment {
     grid-area: development;
 }
@@ -57,8 +61,8 @@
     grid-area: performance;
 }
 
-.teaching {
-    grid-area: teaching;
+.etc {
+    grid-area: etc;
 } 
 
 .projectHeader{
