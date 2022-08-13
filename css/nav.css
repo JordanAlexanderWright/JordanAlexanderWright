@@ -90,7 +90,7 @@ h1 {
 
 nav {
   display: flex;
-  background-color: #84A98C;
+  background-color: lightgrey;
   max-height: 0;
   overflow: hidden;
   transition: max-height .2s ease-in-out;
