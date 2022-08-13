@@ -78,10 +78,9 @@ document.getElementById('submitButton').addEventListener('click', (e) => {
     let emailAddress = document.getElementById('emailField').value;
     let message = document.getElementById('messageField').value;
 
-    if (!userName || !emailAddress || !message){
-        showMessage('Please fill out all fields');
-    } else {
-
+    switch(true){
+    case (userName && emailAddress && message && emailAddress.includes('@')):
+        {
         console.log(userName, emailAddress, message);
 
         let contactData = {
@@ -99,47 +98,57 @@ document.getElementById('submitButton').addEventListener('click', (e) => {
             },
         }
 
-        console.log('attempting post');
         fetch("https://www.actionforms.io/e/r/portfolio-forms", requestPayload)
             .then(response => {
                 if (response.status === 200) {
                     console.log('Yep!');               
                 }
 
-                showMessage(response.status)
+                showMessage('it worked', response.status)
                 return response.text()
             })
             .then(text => console.log(text))
             .catch(error => console.log('error', error));
+        
+        break;
+        }
+    
+    case (!userName || !emailAddress || !message):     
+        showMessage('Please fill out all fields');  
+        break;  
 
-    }    
-})
-
-    function showMessage(responseCode){
-        let messageContainer = document.getElementById('responseMessage')
-        if (responseCode === 200) {        
-            messageContainer.innerHTML = 'Thank You! Your Response Was Submitted';
-            messageContainer.style.color = '#CAD2C5';
-            messageContainer.style.display = 'inline';
-            messageContainer.classList.add('showMessage');
-
-            setTimeout( () => messageContainer.classList.replace('showMessage', 'hideMessage'), 2000);
-            
-        } else {
-            messageContainer.innerHTML = 'An Error occured, please try again.';
-            messageContainer.style.color = 'red';
-            messageContainer.style.display = 'inline';
-            messageContainer.classList.add('showMessage');
-
-            setTimeout( () => {
-                messageContainer.classList.replace('showMessage', 'hideMessage');
-                messageContainer.style.display = null;
-            }, 2000)
+    case (!emailAddress.includes('@')):
+        {
+            showMessage('Email must include an @ sign');
+            break;
         }
     }
+})
 
+// Messages for contact form error / success
+function showMessage (message = 'An Error occured, please try again', responseCode = 0,){
     let messageContainer = document.getElementById('responseMessage')
-    // messageContainer.style.display = 'inline'
+
+
+    if (responseCode === 200) { 
+        message = 'Thank You! Your Response Was Submitted'    
+        messageContainer.style.color = '#CAD2C5';
+ 
+    } else {
+        messageContainer.innerHTML = message;
+        messageContainer.style.color = 'red';
+    }
+
+    messageContainer.classList.add('showMessage');
+    
+    setTimeout( () => {
+        messageContainer.classList.replace('showMessage', 'hideMessage');     
+    }, 2000)
+
+    setTimeout( () => {   
+        messageContainer.classList.remove('hideMessage');
+    }, 4000)
+}
 
 // hamburger menu events
 

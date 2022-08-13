@@ -83,26 +83,34 @@
 #submitButton:hover{
    background-color: #46665e ; 
    color: #c1c9bc; 
+   cursor: pointer;
 }
 
 /* Styles for message confirmation / issues */
 
 #responseMessage{
-  display:none;
-  color: white;
+  opacity: 0;
   grid-area: response;
   justify-self: center;
 }
 
 .showMessage {
   animation-name: showMessageAnimation;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-play-state:running;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-.hideMessage{
+@keyframes showMessageAnimation{
+  from{
+      opacity: 0
+  } to {
+      opacity: 1
+  }
+}
+
+.hideMessage {
   animation-name: hideMessageAnimation;
   animation-duration: 2s;
   animation-play-state: running;
@@ -118,13 +126,7 @@
   }
 }
 
-@keyframes showMessageAnimation{
-  from{
-      opacity: 0
-  } to {
-      opacity: 1
-  }
-}
+
 
 /* Thank you box styles */
 
