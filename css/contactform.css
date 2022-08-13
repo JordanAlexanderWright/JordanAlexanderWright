@@ -2,7 +2,6 @@
   display: none;
   opacity: 0;
   order: 1;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
